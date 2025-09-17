@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Reserve your table at Sunrise Bistro. Explore our menu, see opening hours, and book a dining experience with ease.">
+  <title>Sunrise Bistro | Reservation & Menu</title>
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Sunrise Bistro</h1>
+    <p>Fresh & Flavorful Dining Experience</p>
+    <nav aria-label="Main Navigation">
+      <ul>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#schedule">Schedule</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#reservation">Reservation</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main content -->
+  <main>
+    <!-- Menu Section -->
+    <section id="menu" aria-labelledby="menu-heading">
+      <h2 id="menu-heading">Our Menu</h2>
+      <ul>
+        <li><strong>Starters:</strong> Garlic Bread, Tomato Soup, Fresh Salad</li>
+        <li><strong>Main Courses:</strong> Grilled Chicken, Pan-Seared Salmon, Vegetarian Pasta</li>
+        <li><strong>Desserts:</strong> Cheesecake, Chocolate Lava Cake, Fruit Tart</li>
+      </ul>
+    </section>
+
+    <!-- Schedule Section -->
+    <section id="schedule" aria-labelledby="schedule-heading">
+      <h2 id="schedule-heading">Opening Hours</h2>
+      <table>
+        <caption>Weekly Schedule</caption>
+        <thead>
+          <tr>
+            <th scope="col">Day</th>
+            <th scope="col">Opening</th>
+            <th scope="col">Closing</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Monday - Friday</td>
+            <td><time datetime="08:00">8:00 AM</time></td>
+            <td><time datetime="22:00">10:00 PM</time></td>
+          </tr>
+          <tr>
+            <td>Saturday - Sunday</td>
+            <td><time datetime="09:00">9:00 AM</time></td>
+            <td><time datetime="23:00">11:00 PM</time></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" aria-labelledby="gallery-heading">
+      <h2 id="gallery-heading">Gallery</h2>
+      <div class="gallery">
+        <figure>
+          <img src="https://via.placeholder.com/400x250" alt="Sunrise Bistro Dining Area">
+          <figcaption>Cozy dining space at Sunrise Bistro.</figcaption>
+        </figure>
+        <figure>
+          <audio controls>
+            <source src="sample-audio.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+          <figcaption>Relaxing background music at the bistro.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Reservation Form -->
+    <section id="reservation" aria-labelledby="reservation-heading">
+      <h2 id="reservation-heading">Make a Reservation</h2>
+      <form action="#" method="post" aria-describedby="form-instructions">
+        <p id="form-instructions">Please fill out the form below to reserve your table.</p>
+
+        <!-- Personal Info -->
+        <fieldset>
+          <legend>Personal Information</legend>
+          <label for="fullname">Full Name:</label>
+          <input type="text" id="fullname" name="fullname" placeholder="John Doe" required autocomplete="name">
+
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" placeholder="example@email.com" required autocomplete="email">
+
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" placeholder="+254 700 000 000" required autocomplete="tel">
+        </fieldset>
+
+        <!-- Reservation Details -->
+        <fieldset>
+          <legend>Reservation Details</legend>
+          <label for="date">Date:</label>
+          <input type="date" id="date" name="date" required>
+
+          <label for="time">Time:</label>
+          <input type="time" id="time" name="time" required>
+
+          <label for="guests">Number of Guests:</label>
+          <input type="number" id="guests" name="guests" min="1" max="20" required>
+
+          <p>Seating Preference:</p>
+          <label><input type="radio" name="seating" value="indoor" required> Indoor</label>
+          <label><input type="radio" name="seating" value="outdoor"> Outdoor</label>
+        </fieldset>
+
+        <!-- Special Requests -->
+        <fieldset>
+          <legend>Special Requests</legend>
+          <label for="requests">Requests (optional):</label>
+          <textarea id="requests" name="requests" placeholder="Let us know if you have dietary needs..."></textarea>
+
+          <label><input type="checkbox" name="newsletter" value="yes"> Subscribe to our newsletter</label>
+        </fieldset>
+
+        <!-- Readonly Example -->
+        <p><label>Restaurant Name: 
+          <input type="text" value="Sunrise Bistro" readonly>
+        </label></p>
+
+        <!-- Submit -->
+        <button type="submit">Reserve Now</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; <time datetime="2025">2025</time> Sunrise Bistro. All rights reserved.</p>
+  </footer>
+</body>
+</html>
